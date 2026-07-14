@@ -8,5 +8,5 @@ POSt {{baseUrl}}
 content-type: application/json
 
 {
-    "name": "Spring - 2"
+    "name": "Spring - 1"
 }
