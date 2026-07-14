@@ -6,7 +6,7 @@ import { UserList } from './list'
   imports: [UserNew, UserList],
   template: `
     <div>
-      <h3>user app</h3>
+      <h3>User app</h3>
       <user-new />
       <user-list />
       
