@@ -18,4 +18,7 @@ class UserController(private val service: UserService){
     
     @PostMapping
     fun create(@RequestBody user: User) = service.create(user)
+    
+    @PutMapping("/{id}")
+    fun create(@PathVariable id: Long, @RequestBody user: User) = service.update(id,user)
 }

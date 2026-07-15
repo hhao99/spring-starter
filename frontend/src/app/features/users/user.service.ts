@@ -32,10 +32,22 @@ export class UserService {
             },
             error: (err) => {
                 console.log(err)
-                this.usersResource.reload()
             },
             complete: ()=> {
                 console.log("user saved")
+            }
+        })
+    }
+    updateUser(user: User) {
+        this.http.put<User>(`${this.base_url}/${user.id}`,user).subscribe({
+            next: ()=> {
+                this.reloadUsers()
+            },
+            error: (err)=> {
+                console.error(err)
+            },
+            complete: ()=> {
+                console.log("user udpated.")
             }
         })
     }
