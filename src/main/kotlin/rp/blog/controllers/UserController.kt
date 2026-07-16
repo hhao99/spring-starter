@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.CrossOrigin
 
 
 @RestController
-@CrossOrigin(origins=["http://localhost:4200"])
+@CrossOrigin(origins=["http://localhost:4200","http://localhost:3000"])
 @RequestMapping("/api/v1/users")
 class UserController(private val service: UserService){
     @GetMapping
